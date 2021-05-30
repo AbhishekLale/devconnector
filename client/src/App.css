@@ -575,3 +575,10 @@ button {
     padding: 0.3rem 0.4rem;
   }
 }
+
+.mybtn {
+  background-color: #494e53 !important;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
