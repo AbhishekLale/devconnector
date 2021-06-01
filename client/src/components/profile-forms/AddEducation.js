@@ -1,5 +1,4 @@
-import React, { Fragment, useState } from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import React, {  useState } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { addEducation } from '../../actions/profile'
@@ -30,7 +29,7 @@ const AddEducation = ( {addEducation,history} ) => {
     const onChange = e => setFormData( {...formData, [e.target.name] : [e.target.value].toString()} )
 
     return (
-        <Fragment>
+        <div>
             <h1 className="large text-primary">
        Add An Education
       </h1>
@@ -66,7 +65,7 @@ const AddEducation = ( {addEducation,history} ) => {
           setFormData({ ...formData, current: !current })
           toggleDisabled(!toDateDisabled)
           }}/> 
-          {' '}Current Job</p>
+          {' '}Current School/Collage</p>
         </div>
         <div className="form-group"> 
           <h4>To Date</h4>
@@ -84,7 +83,7 @@ const AddEducation = ( {addEducation,history} ) => {
         <input type="submit" className="btn btn-primary my-1" />
         <a className="btn btn-light my-1" href="dashboard.html">Go Back</a>
       </form>
-        </Fragment>
+        </div>
     )
 }
 
